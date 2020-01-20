@@ -1,0 +1,22 @@
+{
+  "name": "hello-cross-compiler",
+  "version": "0.0.0",
+  "description": "My Project",
+  "esy": {
+    "build": "dune build -p #{self.name}"
+  },
+  "dependencies": {
+    "@esy-ocaml/reason": "*",
+    "@opam/dune": "^2.1.3"
+  },
+  "devDependencies": {
+    "ocaml": "4.7.1004",
+    "@opam/ocamlfind": "*",
+    "ocaml-cross-compiler": "4.7.1004"
+  },
+  "resolutions": {
+    "ocaml": "github:EduardoRFS/ocaml:package.json#20d8c096143720b6de6f046d5fb1090024a4077f",
+    "ocaml-cross-compiler": "github:EduardoRFS/ocaml:ocaml-cross-compiler.json#20d8c096143720b6de6f046d5fb1090024a4077f",
+    "esy-cross-compiler": "link:../esy-cross-compiler"
+  }
+}

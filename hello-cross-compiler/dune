@@ -1,0 +1,5 @@
+(dirs (:standard \ node_modules \ _esy))
+(executable
+   (name HelloCrossCompiler)
+   (public_name HelloCrossCompiler.exe) 
+)

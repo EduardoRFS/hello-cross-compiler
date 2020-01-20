@@ -1,0 +1,18 @@
+{
+  "name": "esy-cross-compiler",
+  "version": "0.0.0",
+  "description": "A wrapper package for a cross-compiler",
+  "license": "MIT",
+  "esy": {
+    "build": [
+      ["bash", "-c", "tar xvf arm-unknown-linux-gnueabi-9.2.0-1.tar.xz --strip 1 -C $cur__install"]
+    ],
+    "buildsInSource": true,
+    "exportedEnv": {
+        "ESY_CROSS_COMPILER_TARGET": {
+          "val": "arm-unknown-linux-gnueabi",
+          "scope": "global"
+        }
+    }
+  }
+}
